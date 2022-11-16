@@ -4,6 +4,8 @@ public class SnowPack {
     public int solve(int[] arr) {
         int sum = 0;
         int n = arr.length;
+        if (n == 0)
+            return sum;
         int[] leftMax = new int[n];
         int[] rightMax = new int[n];
         leftMax[0] = arr[0];

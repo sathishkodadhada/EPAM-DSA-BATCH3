@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 class SumArrayTest {
     private static int[] elements;
     private static SumArray sumArray;
@@ -16,25 +18,21 @@ class SumArrayTest {
 
     @Test
     void sum() {
-        int expected = 55;
-        Assertions.assertEquals(expected, sumArray.sum(elements));
+        Assertions.assertEquals(Arrays.stream(elements).sum(), sumArray.sum(elements));
     }
 
     @Test
     void sumUsingRecursion() {
-        int expected = 55;
-        Assertions.assertEquals(expected, sumArray.sumUsingRecursion(elements));
+        Assertions.assertEquals(Arrays.stream(elements).sum(), sumArray.sumUsingRecursion(elements));
     }
 
     @Test
     void sumWithEmptyArray() {
-        int expected = 0;
-        Assertions.assertEquals(expected, sumArray.sum(new int[]{}));
+        Assertions.assertEquals(0, sumArray.sum(new int[]{}));
     }
 
     @Test
     void sumUsingRecursionWithEmptyArray() {
-        int expected = 0;
-        Assertions.assertEquals(expected, sumArray.sumUsingRecursion(new int[]{}));
+        Assertions.assertEquals(0, sumArray.sumUsingRecursion(new int[]{}));
     }
 }

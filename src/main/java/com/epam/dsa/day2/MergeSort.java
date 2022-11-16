@@ -1,7 +1,11 @@
 package com.epam.dsa.day2;
 
 public class MergeSort {
-    public void mergeSort(int[] arr, int low, int high) {
+    public void sort(int[] arr) {
+        mergeSort(arr, 0, arr.length - 1);
+    }
+
+    private void mergeSort(int[] arr, int low, int high) {
         if (low < high) {
             int mid = (low + high) / 2;
             mergeSort(arr, low, mid);

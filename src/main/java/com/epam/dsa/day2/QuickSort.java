@@ -1,7 +1,11 @@
 package com.epam.dsa.day2;
 
 public class QuickSort {
-    public void quickSort(int[] arr, int first, int last) {
+    public void quickSort(int[] arr) {
+        quickSort(arr, 0, arr.length - 1);
+    }
+
+    private void quickSort(int[] arr, int first, int last) {
         if (first < last) {
             int i = first;
             int pivot = first;
