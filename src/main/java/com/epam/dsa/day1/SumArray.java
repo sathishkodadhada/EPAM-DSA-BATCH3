@@ -1,8 +1,6 @@
 package com.epam.dsa.day1;
 
 public class SumArray {
-    //TC: O(n)
-    //SC: O(1)
     public int sum(int[] elements) {
         int sum = 0;
         for (int ele : elements) {
@@ -12,8 +10,6 @@ public class SumArray {
 //        return Arrays.stream(elements).sum();
     }
 
-    //TC: O(n)
-    //SC: O(n) for stack space
     public int sumUsingRecursion(int[] elements) {
         return sum(elements, 0, elements.length);
     }

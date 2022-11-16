@@ -1,11 +1,15 @@
-Problem Statement: Find Sum of all elements in an Array
+### Problem Statement: Find Sum of all elements in an Array
 
-Approach: We can iterate or recursively find sum of all elements in an Array
+### Approach: We can iterate or recursively find sum of all elements in an Array
 
-Iterative Solution:
+### Iterative Solution:
+
 Time Complexity: O(n)
+
 Space Complexity: O(1)
 
-Recursive Solution:
+### **Recursive Solution:**
+
 Time Complexity: O(n)
-Space Complexity: O(n) for stack space
+
+Space Complexity: O(1) if we ignore stack space
