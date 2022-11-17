@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class BinarySearchTest {
-    int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    BinarySearch binarySearch = new BinarySearch();
+    private final int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    private final BinarySearch binarySearch = new BinarySearch();
 
     @Test
     void search() {

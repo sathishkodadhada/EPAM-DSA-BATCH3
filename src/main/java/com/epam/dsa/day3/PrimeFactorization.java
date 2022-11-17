@@ -6,12 +6,13 @@ import java.util.List;
 
 public class PrimeFactorization {
     public Integer[] primeFactorization(int x) {
+        //TODO: Incomplete
         boolean[] primes = sieveOfEratosthenes(x);
         List<Integer> res = new ArrayList<>();
         for (int i = 2; i < x / 2; i++) {
-            if (x % i == 0 && primes[i]) {
-                res.add(i);
-                if (x / i != i) res.add(i);
+            if (x % i == 0) {
+                if (primes[i]) res.add(i);
+                if (primes[x / i] && x / i != i) res.add(x / i);
             }
         }
         return res.toArray(new Integer[0]);
@@ -30,9 +31,5 @@ public class PrimeFactorization {
         }
 
         return prime;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(1 / 3.0);
     }
 }
