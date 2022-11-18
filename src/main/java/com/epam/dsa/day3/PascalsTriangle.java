@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangle {
-    public static int pascal(int row, int col) {
+    public int pascal(int row, int col) {
+        if (row < 0 || col < 0) return -1;
         List<List<Integer>> result = new ArrayList<>();
         for (int i = 1; i <= row + 1; i++) {
             List<Integer> list = new ArrayList<>();
