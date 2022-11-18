@@ -1,11 +1,11 @@
 package com.epam.dsa.day3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class LongestWord {
-    public static String[] longestWord(List<String> dictionary, String letters) {
+    //TC: O(n) & SC: O(1)
+    public String[] longestWord(List<String> dictionary, String letters) {
         List<String> res = new ArrayList<>();
         int[] count = getFrequency(letters);
         int maxLen = 0;
@@ -38,11 +38,5 @@ public class LongestWord {
             count[ch - 'a']++;
         }
         return count;
-    }
-
-    public static void main(String[] args) {
-        List<String> dictionary = List.of("to", "toe", "toes", "doe", "dog", "god", "dogs", "book", "banana");
-        String letters = "oetdg";
-        System.out.println(Arrays.toString(longestWord(dictionary, letters)));
     }
 }

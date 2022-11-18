@@ -1,6 +1,7 @@
 package com.epam.dsa.day5;
 
 public class WalkingRobot {
+    //TC: O(n) && SC: O(1)
     public int[] walk(String path) {
         int i = 0;
         int j = 0;

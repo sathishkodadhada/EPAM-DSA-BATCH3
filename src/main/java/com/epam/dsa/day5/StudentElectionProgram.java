@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class StudentElectionProgram {
+    //TC: O(numberOfStudents * songLength) && SC: O(numberOfStudents)
     public int whoIsElected(int numberOfStudents, int songLength) {
         if (numberOfStudents == 0) return -1;
         Queue<Integer> queue = new LinkedList<>();

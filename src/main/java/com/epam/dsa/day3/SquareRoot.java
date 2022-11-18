@@ -1,6 +1,7 @@
 package com.epam.dsa.day3;
 
 public class SquareRoot {
+    //TC: O(log n) && SC: O(1)
     public double squareRoot(int x) {
         if (x < 0) throw new IllegalArgumentException("Need a positive value but found negative");
         int low = 1;

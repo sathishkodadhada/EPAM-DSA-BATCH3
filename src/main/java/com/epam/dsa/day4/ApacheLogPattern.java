@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class ApacheLogPattern {
+    //TC: O(n) && SC: O(n)
     public String findTopIPAddress(String[] lines) {
         int maxCnt = 0;
         Map<String, Integer> count = new LinkedHashMap<>();

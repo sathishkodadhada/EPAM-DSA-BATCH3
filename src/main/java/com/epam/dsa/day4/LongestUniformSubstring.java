@@ -1,6 +1,7 @@
 package com.epam.dsa.day4;
 
 public class LongestUniformSubstring {
+    //TC: O(n) && SC: O(1)
     public int[] repeatedSubstring(String str) {
         if (str.length() == 1) return new int[]{0, 1};
         int idx = -1, maxCnt = 0;

@@ -1,6 +1,7 @@
 package com.epam.dsa.day4;
 
 public class SmallestNumber {
+    //TC: O(log n) && SC: O(1)
     public int findMin(int[] a) {
         if (a.length == 0) return 0;
         int pivot = getPivot(a);
