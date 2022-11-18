@@ -3,8 +3,6 @@ package com.epam.dsa.day3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 class PrimeFactorizationTest {
     private final PrimeFactorization primeFactorization = new PrimeFactorization();
 
@@ -25,7 +23,6 @@ class PrimeFactorizationTest {
 
     @Test
     void primeFactorizationWhenGiven2() {
-        System.out.println(Arrays.toString(primeFactorization.primeFactorization(20)));
         Assertions.assertArrayEquals(new Integer[]{2, 5}, primeFactorization.primeFactorization(20));
     }
 }

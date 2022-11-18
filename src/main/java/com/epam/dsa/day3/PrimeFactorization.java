@@ -6,10 +6,9 @@ import java.util.List;
 
 public class PrimeFactorization {
     public Integer[] primeFactorization(int x) {
-        //TODO: Incomplete
         boolean[] primes = sieveOfEratosthenes(x);
         List<Integer> res = new ArrayList<>();
-        for (int i = 2; i < x / 2; i++) {
+        for (int i = 2; i < Math.sqrt(x); i++) {
             if (x % i == 0) {
                 if (primes[i]) res.add(i);
                 if (primes[x / i] && x / i != i) res.add(x / i);
